@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>存在文本节点的flex</title>
+    <style>
+        .wrap{
+            display: flex;
+            height: 300px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            box-shadow: 0 0 20px 0 #ddd;
+            border: 1px solid #ddd;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            margin: auto 0;
+        }
+        .item1{
+            background: #75deef;
+        }
+        .item2{
+            background: #66efab;
+        }
+        .item3{
+            background: #ef9fef;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    flextext1
+    <div class="item item1">item1</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+    flextext2
+</div>
+</body>
+</html>
