@@ -5,7 +5,7 @@
 **flex 项目(flex item)**： 对于一个flex容器内的所有子元素将变成flex项目  
 >注： 对于flex容器内的文本节点也将变成flex项目，不连续的文本节点将变成两个不同的flex项目;  
 
-[相关代码]((https://github.com/zhangjing28/FlexDemo/blob/master/page/flexWithText.html) )  
+[相关代码](https://github.com/zhangjing28/FlexDemo/blob/master/page/flexWithText.html)   
 相关结果展示：  
 ![相关结果](https://upload-images.jianshu.io/upload_images/12275615-6ffaa5b0cf20032d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
 
