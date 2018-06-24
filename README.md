@@ -48,5 +48,7 @@ item1的收缩因子为200 * 2 / 1200 = .3333;
 item1的最终宽度为 200 - .3333 * 200 = 133.33;  
 item2的最终宽度为 200 -  200 * .5 = 100;   
 item3的最终宽度为 200 - 1 * 200 / 6 = 166.67;  
+> 注：若flex-grow或者flex-shrink计算出来的宽度大于max-width或者小于min-width，则超出或者不足的部分会平均被其他的flex item消耗掉  
+
 ###6. flex相关布局 
 [具体可以参见](https://github.com/zhangjing28/FlexDemo/tree/master/layoutPage)
