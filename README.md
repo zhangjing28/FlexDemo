@@ -3,9 +3,10 @@
 
 **flex容器(flex container)**：对一个DOM元素添加```display:flex```或者```display:inline-flex```可以将其变成一个flex容器(flex container)  
 **flex 项目(flex item)**： 对于一个flex容器内的所有子元素将变成flex项目  
->注： 对于flex容器内的文本节点也将变成flex项目，不连续的文本节点将变成两个不同的flex项目;[相关链接](https://github.com/zhangjing28/FlexDemo/blob/master/page/flexWithText.html)     
+>注： 对于flex容器内的文本节点也将变成flex项目，不连续的文本节点将变成两个不同的flex项目;    
 [相关代码]((https://github.com/zhangjing28/FlexDemo/blob/master/page/flexWithText.html) )  
 ![相关结果](https://upload-images.jianshu.io/upload_images/12275615-6ffaa5b0cf20032d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 **主轴(main axis)**:flex容器默认的主轴为水平的  
 **交叉轴(cross axis)**:flex容器默认的交叉轴为垂直的  
 ![相关概念示意图.png](https://upload-images.jianshu.io/upload_images/12275615-187a7930c0f5580b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
