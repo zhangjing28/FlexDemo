@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单列布局</title>
+    <style>
+        .flex-wrap{
+            display: flex;
+            width: 600px;
+            height: 300px;
+            border: 1px solid #ddd;
+            /*设置flex item水平居中*/
+            justify-content: center;
+            /*设置flex item垂直居中*/
+            align-items: center;
+        }
+        .flex-item{
+            flex-basis: 100px;
+            height: 100px;
+        }
+        .item1{
+            background: #66efab;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-wrap">
+        <div class="flex-item item1">item1</div>
+    </div>
+
+</body>
+</html>

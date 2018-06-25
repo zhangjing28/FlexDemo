@@ -24,11 +24,24 @@
         .item3{
             background: #ef6754;
         }
-
+        .flex-wrap2 .item1{
+            min-width: 160px;
+        }
     </style>
 </head>
 <body>
     <div class="flex-wrap">
+        <div class="flex-item item1">item1</div>
+        <div class="flex-item item2">item2</div>
+        <div class="flex-item item3">item3</div>
+    </div>
+    <!--
+        当shrink计算后的item1的宽度为133.33 小于160时，
+        不足的部分需要item2，item3安比例补足，
+        即item2的实际宽度为200 - 3 / 6 * 200 - (160 - 133.33) * 3 / 4 = 80
+        item3的实际宽度为200 - 1 / 6 * 200 - (160 - 133.33) * 1 / 4 = 160
+    -->
+    <div class="flex-wrap flex-wrap2">
         <div class="flex-item item1">item1</div>
         <div class="flex-item item2">item2</div>
         <div class="flex-item item3">item3</div>
