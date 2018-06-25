@@ -29,8 +29,9 @@
   
 **align-self**: auto | flex-start | flex-end | center | baseline | stretch  
 **order**: number /*  default  0 */  
-###4. flex-grow计算方式
-**前提**：父元素宽度为400px，item1,item2,item3宽度均为100px; item1的flex-grow设置为2;item2的flex-grow设置为3；计算过程如下:  
+###4. flex-grow计算方式  
+**前提**：父元素宽度为400px，item1,item2,item3宽度均为100px; item1的flex-grow设置为2;item2的flex-grow设置为3；  
+计算过程如下:  
 flex容器的可分配空间为400 - 100*3 = 100;  
 需要分配的总份数为 2+3 = 5;  
 一份的宽度为 100 / 5 = 20;  
@@ -38,7 +39,8 @@ item1的最终宽度为100 + 20 * 2 = 140;
 item2的最终宽度为 100 + 20 * 3 = 160;   
 [具体demo]()  
 ###5. flex-shrink计算方式  
-父元素宽度为400px，item1,item2,item3宽度均为200px; item1的flex-shrink设置为2;item2的flex-shrink设置为3；计算过程如下：
+**前提**：父元素宽度为400px，item1,item2,item3宽度均为200px; item1的flex-shrink设置为2;item2的flex-shrink设置为3；  
+计算过程如下：
 flex容器的可分配空间为400 - 200 * 3 = -200；
 总宽度为 所有item的basis * shrink之和，  即
 200*2 + 200 * 3 + 200 * 1 = 1200;  
@@ -48,6 +50,7 @@ item1的收缩因子为200 * 2 / 1200 = .3333;
 item1的最终宽度为 200 - .3333 * 200 = 133.33;  
 item2的最终宽度为 200 -  200 * .5 = 100;   
 item3的最终宽度为 200 - 1 * 200 / 6 = 166.67;  
+
 > 注：若flex-grow或者flex-shrink计算出来的宽度大于max-width或者小于min-width，则超出或者不足的部分会平均被其他的flex item消耗掉；具体例子可以参见[本文相关的github工程](https://github.com/zhangjing28/FlexDemo)    
 
 ###6. flex相关布局 
