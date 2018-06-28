@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>单列布局</title>
     <style>
-        .flex-wrap{
-            display: flex;
+        .wrapper{
             width: 600px;
             height: 300px;
             border: 1px solid #ddd;
+            margin: 10px auto;
+        }
+        .flex-wrap{
+            display: flex;
             /*设置flex item水平居中*/
             justify-content: center;
             /*设置flex item垂直居中*/
@@ -16,17 +19,34 @@
         }
         .flex-item{
             flex-basis: 100px;
-            height: 100px;
+
         }
-        .item1{
+        .item{
+            width: 100px;
+            height: 100px;
             background: #66efab;
+        }
+        .absolute-wrap{
+            position: relative;
+        }
+        .absolute-item{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 宽高未知的情况下 */
+            transform: translate(-50%,-50%);
+            /* 已知宽高的情况下 */
+            /*margin-left: -50px;*/
+            /*margin-top: -50px;*/
         }
     </style>
 </head>
 <body>
-    <div class="flex-wrap">
-        <div class="flex-item item1">item1</div>
+    <div class="wrapper flex-wrap">
+        <div class="flex-item item">item1</div>
     </div>
-
+    <div class="wrapper absolute-wrap">
+        <div class="item absolute-item">item1</div>
+    </div>
 </body>
 </html>
