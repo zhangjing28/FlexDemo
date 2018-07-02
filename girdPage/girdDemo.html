@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gird</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .wrapper{
+            display: flex;
+            min-height: 100vh;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .wrapper header,
+        .wrapper footer{
+            flex: 0 0 100px;
+            background: #eee;
+            text-align: center;
+            line-height: 100px;
+        }
+        .content{
+            flex: 1;
+            display: flex;
+
+        }
+        .content nav{
+            flex: 0 0 80px;
+        }
+        .content .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            flex: 1;
+            border: 1px solid #ddd;
+            border-top:0;
+            border-bottom: 0;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background: #abcdef;
+        }
+        .content aside{
+            flex: 0 0 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>header</header>
+    <div class="content">
+        <nav>nav</nav>
+        <div class="main">
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+        </div>
+        <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+</div>
+</body>
+</html>

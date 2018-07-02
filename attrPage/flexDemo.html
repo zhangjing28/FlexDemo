@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex demo</title>
+    <style>
+        .wrap{
+            display: flex;
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            box-shadow: 0 0 20px 0 #ddd;
+            border: 1px solid #ddd;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            margin: auto 0;
+        }
+        .item1{
+            background: #75deef;
+        }
+        .item2{
+            background: #66efab;
+        }
+        .item3{
+            background: #ef9fef;
+        }
+        .item4{
+            background: #ef6754;
+        }
+
+    </style>
+</head>
+<body>
+    <!--表明此时flex取值为： 0 1 auto;-->
+    <div class="wrap">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+    </div>
+</body>
+</html>
