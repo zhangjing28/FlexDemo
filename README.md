@@ -20,7 +20,7 @@
 **align-content**: flex-start | flex-end | center | space-between | space-around | stretch | space-evenly;  
 ### 3. flex项目上的属性  
 **flex-grow**: number /* default 1 */  
-**flext-shrink**: number /* default 1 */  
+**flex-shrink**: number /* default 1 */  
 **flex-basis**: <length> | auto /* default auto */  
 **flex**: flex-grow | flex-shrink | flex-basis  
 > flex默认值为 0 1 auto  
